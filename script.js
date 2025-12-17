@@ -12,15 +12,6 @@ fetch(API_URL)
         // étape 4 : Tester les données 
 
         console.log(data.realisations);
-
-        data.promessesClients.forEach(promess => {
-            let promesses = document.createElement("p");
-
-            promesses.textContent = promess
-            console.log(promesses);
-            // Il manque un appendChild
-        });
-
         // etape 5 : Creer le nom de l'entreprise (h1), slogan (H2) et les boutons
         const logo = document.getElementById("logo");
         logo.textContent = data.entreprise;
@@ -42,11 +33,24 @@ fetch(API_URL)
         accroche.appendChild(slogan);
         accroche.appendChild(boutton);
 
+        let avantage = document.getElementById("container");
+        data.promessesClients.forEach(promess => {
+            let promesses = document.createElement("p");
+            promesses.textContent = promess;
+
+
+            console.log(promesses);
+            avantage.appendChild(promesses);
+
+            // Il manque un appendChild
+        });
+
+
 
 
         data.realisations.forEach(real => {
+            let containerReal = document.getElementById("real");
             let card = document.createElement("div");
-
 
             // ETAPE 6 : Pour chaque élement du tableau "réalisation"créer une DIV
             // - Créer un titre (h3) pour afficher le nom
@@ -62,12 +66,13 @@ fetch(API_URL)
             image.src = real["image-url"];
             console.log(image);
 
+            card.appendChild(image);
             card.appendChild(title);
             card.appendChild(paragraphe);
-            card.appendChild(image);
+
 
             // ETAPE 7 : Envoyer dans le HTML les élements crées (appenchild)
-            container.appendChild(card);
+            containerReal.appendChild(card);
         });
 
 
@@ -95,11 +100,12 @@ fetch(API_URL)
             note.textContent = temo.note
             console.log(note);
 
+            let test = document.getElementById("temoi")
+            test.appendChild(div);
             div.appendChild(name);
             div.appendChild(presta);
             div.appendChild(comment);
             div.appendChild(note);
             // ETAPE 9 : Envoyer dans le HTML les élements crées (appenchild)
-            container.appendChild(div);
         });
     })

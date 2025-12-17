@@ -57,3 +57,8 @@ align-items: center;
     padding: 17px;
     background: center;
 }
+.flex{
+    display: flex;
+   
+    gap: 20px;
+}
