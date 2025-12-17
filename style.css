@@ -1,3 +1,7 @@
+* {
+    margin: 0px;
+}
+
 img {
     width: 360px;
 }
@@ -17,8 +21,8 @@ nav {
     }
 
     #btn {
-        margin: 25px;
-        padding: 13px;
+        margin: 15px;
+        padding: 10px;
         color: #E8D5CC;
         background-color: #BDA18A;
         font-weight: bold;
@@ -27,7 +31,7 @@ nav {
 
 li {
     list-style-type: none;
-font-size: 18px;
+    font-size: 18px;
 
 }
 
@@ -35,9 +39,21 @@ a {
     text-decoration: none;
     color: #BDA18A;
 }
-#hero{
-   background-color:#BDA18A;
+
+#hero {
+    background-color: #BDA18A;
+    display: flex;
+    justify-content: center;
 }
-#accroche{
+
+#accroche {
     padding: 100px;
+align-items: center;
+
+}
+
+.button {
+    margin: 95px;
+    padding: 17px;
+    background: center;
 }

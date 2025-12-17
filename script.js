@@ -20,17 +20,22 @@ fetch(API_URL)
             console.log(promesses);
             // Il manque un appendChild
         });
-    
+
         // etape 5 : Creer le nom de l'entreprise (h1), slogan (H2) et les boutons
         const logo = document.getElementById("logo");
         logo.textContent = data.entreprise;
 
         let titre = document.createElement("h2");
         titre.textContent = data.titre;
+        // titre.classList.add("h2");
+
         let slogan = document.createElement("p");
         slogan.textContent = data.propositionDeValeur;
+        // slogan.classList.add("p");
+
         let boutton = document.createElement("button");
         boutton.textContent = data.texteBouton;
+        boutton.classList.add("button");
 
         let accroche = document.getElementById("accroche");
         accroche.appendChild(titre);
