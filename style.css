@@ -3,7 +3,7 @@
 }
 
 img {
-    width: 360px;
+    width: 300px;
 }
 
 nav {
@@ -18,6 +18,7 @@ nav {
     h1 {
         color: #BDA18A;
         font-size: 25px;
+        margin-bottom: 15px;
     }
 
     #btn {
@@ -44,12 +45,13 @@ a {
     background-color: #BDA18A;
     display: flex;
     justify-content: center;
+    padding: 50px;
 }
 
 #accroche {
     padding: 100px;
-align-items: center;
-
+    align-items: center;
+text-align: center;
 }
 
 .button {
@@ -57,8 +59,41 @@ align-items: center;
     padding: 17px;
     background: center;
 }
-.flex{
+
+.flex {
     display: flex;
-   
+    padding: 88px;
     gap: 20px;
+    background-color: #E8D5CC;
+  
+}
+
+#container {
+    padding: 186px;
+    font-size: 19px;
+    
+}
+
+h2 {
+    text-align: center;
+
+}
+
+#footer {
+    background-color: #BDA18A;
+    padding: 30px;
+}
+
+#titre {
+    padding-top: 20px;
+}
+#pi{
+    text-align: end;
+}
+p{
+   font-family: "Nunito", sans-serif;
+  
+}
+.bordur{
+border: 1px solid black;
 }

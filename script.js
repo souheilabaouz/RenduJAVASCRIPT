@@ -22,7 +22,7 @@ fetch(API_URL)
 
         let slogan = document.createElement("p");
         slogan.textContent = data.propositionDeValeur;
-        // slogan.classList.add("p");
+        slogan.classList.add("p");
 
         let boutton = document.createElement("button");
         boutton.textContent = data.texteBouton;
@@ -37,7 +37,7 @@ fetch(API_URL)
         data.promessesClients.forEach(promess => {
             let promesses = document.createElement("p");
             promesses.textContent = promess;
-
+            promesses.classList.add("bordur");
 
             console.log(promesses);
             avantage.appendChild(promesses);
@@ -95,6 +95,7 @@ fetch(API_URL)
             let comment = document.createElement("p");
             comment.textContent = temo.commentaire
             console.log(comment);
+            comment.classList.add("bordur");
             // - creer un p pour la note
             let note = document.createElement("p");
             note.textContent = temo.note
