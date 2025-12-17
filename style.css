@@ -1,3 +1,43 @@
 img {
-    width: 100px;
+    width: 360px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+
+    ul {
+        gap: 100px;
+        display: flex
+    }
+
+    h1 {
+        color: #BDA18A;
+        font-size: 25px;
+    }
+
+    #btn {
+        margin: 25px;
+        padding: 13px;
+        color: #E8D5CC;
+        background-color: #BDA18A;
+        font-weight: bold;
+    }
+}
+
+li {
+    list-style-type: none;
+font-size: 18px;
+
+}
+
+a {
+    text-decoration: none;
+    color: #BDA18A;
+}
+#hero{
+   background-color:#BDA18A;
+}
+#accroche{
+    padding: 100px;
 }
